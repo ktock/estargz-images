@@ -1,4 +1,6 @@
-set -e -x
+#!/bin/bash
+
+set -euxo pipefail
 
 containerd -v
 containerd &
