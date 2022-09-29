@@ -2,15 +2,15 @@
 
 set -eu -o pipefail
 
-repo=ghcr.io/stargz-containers
+repo=ghcr.io/ktock
 
 IMAGES=$(cat <<EOF
-${repo}/ubuntu:22.04
-${repo}/fedora:35-org
-${repo}/rethinkdb:2.4.1-org
+tomcat:10.0.0-jdk15-openjdk-buster-zstd
+gcc:10.2.0-esgz
+postgres:12-alpine-esgz
 EOF
 )
 
 for i in $IMAGES ; do
-    crane digest ${i}
+    crane digest ${repo}/${i}
 done

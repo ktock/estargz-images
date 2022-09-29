@@ -1,6 +1,9 @@
 name: test
 on: [push]
 
+env:
+  REGISTRY: ghcr.io
+
 jobs:
   test:
     runs-on: ubuntu-20.04
