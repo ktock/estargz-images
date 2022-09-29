@@ -11,7 +11,6 @@ postgres:12-alpine-esgz
 python:3.9-zstdchunked
 pause:3.6
 nerdctl-ipfs-registry:bb682bc
-ipfs-cluster:v0.14.2
 rabbitmq:3.9.4-zstdchunked
 elasticsearch:7.14.0-zstdchunked
 jenkins:2.60.3-esgz
