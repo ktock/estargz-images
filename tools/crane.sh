@@ -7,6 +7,7 @@ repo=ghcr.io/ktock
 IMAGES=$(cat <<EOF
 tomcat:10.0.0-jdk15-openjdk-buster-zstd
 gcc:10.2.0-esgz
+ipfs/ipfs-cluster:v0.14.2
 postgres:12-alpine-esgz
 python:3.9-zstdchunked
 pause:3.6
