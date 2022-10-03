@@ -4,12 +4,12 @@ set -eux -o pipefail
 
 repo=ghcr.io/ktock
 
-IMAGES=$(cat <<EOF
-ubuntu:20.04
-EOF
-)
+# IMAGES=$(cat <<EOF
+# ubuntu:20.04
+# EOF
+# )
+# for i in $IMAGES ; do
+# done
 
-for i in $IMAGES ; do
-    crane copy --platform=linux/amd64 ${i} ${repo}/${i}-test || true
-    crane copy --platform=linux/amd64 ${i} ${repo}/estargz-images/${i}-test || true
-done
+crane copy --platform=linux/amd64 ubuntu:20.04 ${repo}/ubuntutest:1-test || true
+crane copy --platform=linux/amd64 ubuntu:20.04 ${repo}/estargz-images/ubuntutest:1-test || true
