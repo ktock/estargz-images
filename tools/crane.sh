@@ -10,6 +10,6 @@ EOF
 )
 
 for i in $IMAGES ; do
-    crane copy --platform=linux/amd64 ${i} ${repo}/${i}-test
-    crane copy --platform=linux/amd64 ${i} ${repo}/estargz-images/${i}-test
+    crane copy --platform=linux/amd64 ${i} ${repo}/${i}-test || true
+    crane copy --platform=linux/amd64 ${i} ${repo}/estargz-images/${i}-test || true
 done
