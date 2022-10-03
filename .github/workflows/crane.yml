@@ -18,4 +18,4 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: run
-        run: sudo bash tools/crane.sh
+        run: tools/crane.sh

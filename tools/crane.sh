@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu -o pipefail
+set -eux -o pipefail
 
 repo=ghcr.io/ktock
 
